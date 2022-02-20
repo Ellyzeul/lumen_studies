@@ -9,6 +9,21 @@ I just want to learn how to do my things using Lumen, so I'll make a simple proj
 
 ## Changelog
 
+ - 2022/02/20 18:02 - Create tables migrations
+    - I learned what is a migration in Laravel/Lumen and how to create them.
+    - Also learned how to use the methods to configure my table fields, like 
+        ```php
+            $table->foreign('field')->references('other_table_field')->on('other_table_name')
+        ```
+    - I had some issues with composite primary key, because if you set a field as auto-increment and later try to set the composite n-tuple of primary keys you will get a error from MySQL because there is already a primary setted, so you need to first declare your fields types, to later set your n-tuple of primary key, to finally set your desired field as auto-increment.
+    - Also differences on types like integer and biginteger will throw an error on foreign key definition.
+    - On the table 'Shows' the auto-increment is set to start on 100000 beacuse I want the codes of the animes to have the same length.
+    - For starters, my database has only three simple tables, just to start working on, the plans are for this database to grow more.
+    - Consulted material:
+        - [Database: Migrations - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/9.x/migrations)
+        - [Two primary keys](https://laracasts.com/discuss/channels/eloquent/two-primary-keys)
+        - [How to properly  create composite primary keys - MYSQL - Stack Overflow](https://stackoverflow.com/questions/5835978/how-to-properly-create-composite-primary-keys-mysql)
+        - [php - Set Auto Increment field start from 1000 in migration laravel 5.1 - Stack Overflow](https://stackoverflow.com/questions/34196045/set-auto-increment-field-start-from-1000-in-migration-laravel-5-1)
  - 2022/02/18 15:05 - Documentation screen
     - I learned how to make redirections and how to serve HTML+CSS.
     - On /routes/web.php you can create new routes, specifying what action to take based on the HTTP verb requested.
