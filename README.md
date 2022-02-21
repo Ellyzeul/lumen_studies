@@ -9,6 +9,18 @@ I just want to learn how to do my things using Lumen, so I'll make a simple proj
 
 ## Changelog
 
+ - 2022/02/20 23:33 - First endpoint
+    - I learned how to create a model (of MVC archtecture) and to make transactions with the DB, using Facade.
+    - Also learned how to return the JSON response using ```response(<content>,<status_code>)``` function.
+    - As I'm used to the MVC, communicate the model with controller was easy.
+    - Consulted material:
+       
+        - [Database - Lumen - PHP Micro-Framework By Laravel](https://lumen.laravel.com/docs/9.x/database)
+        - [Database - Lumen - PHP Micro-Framework By Laravel (INSERT query section)](https://laravel.com/docs/9.x/database#running-an-insert-statement)
+        - [php - Simple POST using Lumen - Stack Overflow](https://stackoverflow.com/questions/38410357/simple-post-using-lumen)
+        - [HTTP Responses - Lumen - PHP Micro-Framework by Laravel](https://lumen.laravel.com/docs/9.x/responses)
+        - [sql - How do I catch a query exception in laravel to see if it fails? - Stack Overflow](https://stackoverflow.com/questions/33679996/how-do-i-catch-a-query-exception-in-laravel-to-see-if-it-fails)
+        - [Facade root not found · Issue #86 · nicolaslopezj/searchable](https://github.com/nicolaslopezj/searchable/issues/86)
  - 2022/02/20 18:02 - Create tables migrations
     - I learned what is a migration in Laravel/Lumen and how to create them.
     - Also learned how to use the methods to configure my table fields, like 

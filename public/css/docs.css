@@ -1,11 +1,12 @@
 body {
+    color: white;
     padding: 0;
     margin: 0;
     display: grid;
     grid-template-areas: 
         'title'
         'body';
-    background-color: rgb(235, 220, 255);
+    background-color: rgb(61, 61, 61);
     font-family: Arial, Helvetica, sans-serif;
 }
 #docs_title {
@@ -23,9 +24,47 @@ body {
     margin-left: 2.5%;
 }
 
+hr {
+    color: white;
+}
+
 main {
     border: 1px solid black;
     border-radius: 5px;
-    background-color: rgb(255, 240, 223);
-    padding: 2px 8px;
+    background-color: rgb(209, 198, 184);
+    padding: 8px;
+    width: 85vw;
+    color: black;
+}
+
+.docs_collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 200ms;
+}
+
+.docs_active, .docs_collapsible:hover {
+    background-color: #555;
+}
+
+.docs_active {
+    border-radius: 5px 5px 0 0;
+}
+
+.docs_content {
+    color: white;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border: 1px solid #555;
+    background-color: #808080;
+    border-radius: 0 0 5px 5px;
 }

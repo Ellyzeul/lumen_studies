@@ -14,8 +14,31 @@
     </div>
     <div id="docs_body">
         <main>
-            <p>For now there's nothing to be documented</p>
+            <p>Anime</p>
+            <button type="button" class="docs_collapsible">Create - <code>POST</code> - <code>/anime/create</code></button>
+            <div class="docs_content">
+                <p>Create request example:</p>
+                <code>
+                    <pre>
+    {
+        japanese_name: "Sangatu no Lion (３月のライオン)",
+        english_name: "March Comes in like a Lion"
+    }
+                    </pre>
+                </code>
+                <hr>
+                <p>Success response example: (status code: 201)</p>
+                <code>
+                    <pre>
+    {
+        message: "Anime successfully inserted!"
+    }
+                    </pre>
+                </code>
+            </div>
         </main>
     </div>
+
+    <script language="javascript" src="/js/docs.js"></script>
 </body>
 </html>
