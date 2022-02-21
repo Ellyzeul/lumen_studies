@@ -2,6 +2,9 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
+use Illuminate\Http\Request;
+use App\Http\Controllers\ShowController;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -19,4 +22,11 @@ $router->get('/', function () use ($router) {
 
 $router->get('/docs', function () use ($router) {
     return view('docs', []);
+});
+
+$router->post('/anime/create', function (Request $request) {
+    return ShowController::create(
+        $request->input('japanese_name'),
+        $request->input('english_name')
+    );
 });
