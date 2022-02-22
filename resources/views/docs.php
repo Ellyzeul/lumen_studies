@@ -36,6 +36,20 @@
                     </pre>
                 </code>
             </div>
+            <button type="button" class="docs_collapsible">Read - <code>GET</code> - <code>/anime/read/{animeId}</code></button>
+            <div class="docs_content">
+                <p>Request without body</p>
+                <hr>
+                <p>Success response example: (status code: 200)</p>
+                <code>
+                    <pre>
+    {
+        japanese_name: "Shingeki no Kyojin (進撃の巨人)",
+        english_name: "Attack on Titan"
+    }
+                    </pre>
+                </code>
+            </div>
         </main>
     </div>
 

@@ -42,6 +42,7 @@ main {
     color: white;
     cursor: pointer;
     padding: 18px;
+    margin-top: 2px;
     width: 100%;
     border: none;
     border-radius: 5px;

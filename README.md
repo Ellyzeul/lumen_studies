@@ -9,6 +9,13 @@ I just want to learn how to do my things using Lumen, so I'll make a simple proj
 
 ## Changelog
 
+ - 2022/XX/XX XX:XX - More routes (in progress)
+    - I did nothing impressive from this point, just created more endpoints to make my CRUD
+    - But there are some relevant points, like: ```$result = DB::select(<statement>, <params_list>)``` is able to call stored procedures and return an array containing objects of ```stdClass``` class, that you can easily turn into associative arrays making a casting, so something like ```$response = (array) $result[0]``` will return you an array with the results, which can be useful to add the HTTP status code on response and to call ```response(<content>,<status_code>)``` on the controller
+    - Consulted material:
+        - [HTTP Routing - Lumen - PHP Micro-Framework By Laravel](https://lumen.laravel.com/docs/9.x/routing)
+        - [Chamar stored procedure usando Eloquent? | Lumen: API Rest com o Micro-framework do Laravel | Solucionado](https://cursos.alura.com.br/forum/topico-chamar-stored-procedure-usando-eloquent-105598)
+        - [Migration for stored procedure](https://laracasts.com/discuss/channels/laravel/migration-for-stored-procedure)
  - 2022/02/20 23:33 - First endpoint
     - I learned how to create a model (of MVC archtecture) and to make transactions with the DB, using Facade.
     - Also learned how to return the JSON response using ```response(<content>,<status_code>)``` function.
