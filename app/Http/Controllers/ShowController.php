@@ -16,4 +16,13 @@ class ShowController extends Controller
 
         return response($response, $status_code);
     }
+
+    public static function read(int $id)
+    {
+        $response = Show::read($id);
+        $status_code = $response['status'];
+        unset($response['status']);
+
+        return response($response, $status_code);
+    }
 }

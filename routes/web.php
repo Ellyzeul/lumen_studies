@@ -30,3 +30,6 @@ $router->post('/anime/create', function (Request $request) {
         $request->input('english_name')
     );
 });
+$router->get('/anime/read/{animeId}', function (int $animeId) {
+    return ShowController::read($animeId);
+});

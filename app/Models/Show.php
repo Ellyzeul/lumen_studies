@@ -32,4 +32,13 @@ class Show extends Model
 
         return $response;
     }
+
+    public static function read(int $id)
+    {
+        $result = DB::select("CALL `read_anime`(?)", [$id]);
+        $response = (array) $result[0];
+        $response['status'] = 200;
+
+        return $response;
+    }
 }
